@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+	<title>Princess And Frog</title>
+	<link href="style.css" rel="stylesheet" />
+	<html class="pnf-bg">
+	<link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
+<style>
+	/* make border class css correct and more better*/
+	.border{
+	    border-style: solid;
+	    border-color: rgba(40, 126, 199, 0.58);
+	    width: 1200px;
+	    margin: 20px auto;
+	    padding: 15px;
+	    background: rgba(255, 255, 255, 0.73);
+	    border-radius: 5px;
+	    font-family: 'Short Stack', cursive;
+	    font-size: 18px;
+	    line-height: 1.5;
+	}
+	
+	/* slider image resize to width 100%;*/
+	.cycle-slideshow img {
+	    max-width: 100%;
+	    padding-top: 50px;
+	}
+	
+	/* slider down navigation radio buttons make center*/
+	.center{
+		display: block;
+		text-align: center;
+	}
+	.center > a {
+		display: inline-block;
+	}
+	.center > a > img {
+    	max-width: 30px;
+	    margin: 14px 7px;
+	    opacity: 0.7;
+	}
+	.center > a > img:hover {
+	    opacity: 1;
+	}
+	/* make slider height fit to screen,*/
+	div .cycle-slideshow{
+		position: relative;
+	    height: 535px;
+	    overflow: hidden;
+	}
+	.main_content{
+		background: url(1.jpg) no-repeat center center fixed;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		padding-bottom: 130px;
+	}
+</style>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script src="js/main.js"></script>
+
+</head>
+<body>
+<div>
+<div id="preloader"></div>
+	<ul class="menu">
+	  <li><a class="active" href="home.html">Home</a></li>
+	  <li><a href="Contact.html">Contact</a></li>
+	  <li><a href="About.html">About</a></li>
+	  <li><a href="Project.html">Project</a></li>
+	  <li style="float: right"><a href="CleverFox.html">Next Story</a></li>
+</div>
+<div class="main_content">
+<div class="cycle-slideshow"  data-cycle-fx="scrollHorz" data-cycle-center-horz=true data-cycle-timeout="0" data-cycle-prev="#prev" data-cycle-next="#next" >
+    <img src="imgs/pnf/7.jpg">
+    <img src="imgs/pnf/8.jpg">
+    <img src="imgs/pnf/9 .jpg">
+</div>
+	<div class="center">
+	    <a href="#" id="prev" title="Previous"><img src="imgs/radioButton.png"></a> 
+	    <a href="#" id="next" title="Next"><img src="imgs/radioButton.png"></a>
+	</div>
+	<!-- ==================================================================== -->
+	<div>
+		 <p class="border" style="    margin-top: 100px;">
+	        There was once a very beautiful <span class="mouseOver"><img src="icons/Princess.png"><strong>princess</strong>.</span> Her father, the <span class="mouseOver"><img src="icons/King.png"><strong>king</strong></span>, made sure she had everything she could ever want. And so the princess had many <span class="mouseOver"><img src="icons/Toy.png"><strong>toys</strong></span> and trinkets to entertain her. Her very favorite toy was a delightful <span class="mouseOver"><img src="icons/Ball.png"><strong>golden ball</strong>.</span> She would toss it in the air and bounce it on the ground all day long.
+	        
+	        One day, when she was playing with her golden ball in the <span class="mouseOver"><img src="icons/Woods.png"><strong>woods</strong></span>, it fell in a nearby well! The princess was dismayed and began to cry. A frog, who lived in the woods, heard her cry and came to ask, “What is wrong fair princess? Why do you cry?” “My ball has fallen into the well, and I cannot get it out,” replied the princess. “I can go down the well and get it for you…” the frog said. “You can?!” the princess asked eagerly. “...If you give me a kiss!” said the frog. The princess was disgusted at the thought of kissing the ugly, wart-covered frog, but she wanted her ball back very much. “Alright,” she agreed, reluctantly. And the frog went down into the well. After a time, he came back up with the princess’s golden ball, and returned it to her. “Alright, princess, it is time for that kiss,” he said.
+		</p>
+	</div>
+	<div>
+		<p class="border">
+			“Are you crazy?” exclaimed the princess. “I would never kiss an ugly thing like you!” With that she ran off, away from the frog and back to the palace. That evening, as she was eating supper with her father, one of the attendants announced, “Sir, you have a visitor. He insists on seeing you and will not go away.”
+			“Let him enter,” said the king. In bounded the frog, much to the horror of the princess. “Ah, there you are, princess. I have been looking for you. You left
+			before I could get that kiss.” The king was confused and insisted on knowing what the frog meant. So the frog explained the agreement which he and the princess had made. The king, although somewhat disgusted by the frog, was upset that his daughter had gone back on her word. “You will stay with us tonight, and my daughter will personally see to your every need and wish,” proclaimed the king. The princess was angry at the frog for coming to the palace. She was also angry at her father for letting the frog stay but did not dare disobey him. “Come along,” she told the frog rudely. “I think I would like to stay in your room tonight,” said the frog.
+			“What?!”
+		</p>
+	</div>
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,297 @@
+/* remove margin from body,html */
+html,body{
+  margin: 0;
+  padding: 0;
+}
+/* font family changed for better readability*/
+body{
+  font-family: sans-serif;
+  line-height: 1.2;
+}
+/* set background image per page */
+.home-bg {
+background: url(wallpapers/writing.jpg) no-repeat center center fixed;
+/*background-size: 1400px 700px;
+background-repeat: no-repeat;*/
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.contact-bg {
+background: url(wallpapers/contact.jpg) no-repeat center center fixed;
+-moz-background-size: cover; 
+background-size: cover;/*1500px 900px*/
+background-repeat: no-repeat;
+}
+
+.about-bg {
+background: url(wallpapers/UQ.jpg) no-repeat center center fixed;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+.project-bg {
+background: url(wallpapers/project.jpg) no-repeat center center fixed;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #CD853F; /*Color Name: Peru*/
+}
+
+.active {
+    background-color: #6B8E23; /*Color Name: OliveDrab */
+}
+
+/*THIS IS FORM*/
+
+legend { /* Position at top left corner of fieldset */
+position:center;
+border:0.2em 0.5em;
+top:100;
+left:100;
+padding:0.5em;
+width:12;
+}
+fieldset {
+    display: block;
+    margin: 30px auto;
+    padding: 15px;
+    border: 4px groove;
+    width: 95%;
+    font-family: verdana, arial, helvetica, sans-serif;
+    color: #979899;
+}
+/*THIS IS FOR DROPDOWN MENU*/
+
+.MyStories {
+    background-color: #CD853F;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 10%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    right: 10;
+    bottom: -250px;
+    right: -600px;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #black;
+    text-decoration-color: white;
+    opacity: 1.0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-left: 2px solid transparent;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.8);
+}
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: white;
+    border-left: 2px solid #CD853F;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+
+}
+
+/*THIS IS THE IMAGE POP OVER*/
+
+.mouseOver {
+        display: inline;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .mouseOver img {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 1em;
+        opacity: 0;
+        pointer-events: none;
+        transition-duration: 800ms;    
+    }
+    
+    .mouseOver.active img {
+        opacity: 1;
+    }
+/* ==================================================== */
+/* THIS IS FOR IMAGE ANIMATION */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+.cycle-slideshow {
+
+}
+
+.cycle-slideshow img {
+  margin:auto;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+span._close {
+    float: right;
+    padding: 5px;
+    margin-top: 17px;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+}
+/* styles for input stuff globally, for better look */
+input[type=text]{
+    height: 30px;
+    min-width: 200px;
+    border: 1px solid silver;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+textarea{
+  border-radius: 2px;
+  border:1px solid silver;
+  min-width: 200px;
+  padding: 5px;
+}
+input[type=button],input[type=submit]{
+    padding: 7px 15px;
+    border-radius: 2px;
+    border: 1px solid silver;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 5px;
+}
+/* Pre loader css */
+div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #333 url('imgs/loading.gif') no-repeat center center; }

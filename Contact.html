@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Me</title>
+	<link href="style.css" rel="stylesheet" />
+    <html class="contact-bg">
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+<div id="preloader"></div>
+<ul class="menu">
+	  <li><a  href="home.html">Home</a></li>
+	  <li><a class="active" href="Contact.html">Contact</a></li>
+	  <li><a href="About.html">About</a></li>
+	  <li><a href="Project.html">Project</a></li>
+</ul>
+
+
+<!-- Modal for show contact submit info -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+        <div class="modal-header">
+          <span class="_close">&times;</span>
+          <h2>Contact form Data</h2>
+        </div>
+        <div class="modal-body">
+            <p class="name"><b>First Name :</b><span></span></p>
+            <p class="lname"><b>Last Name :</b><span></span></p>
+            <p class="phonenumber"><b>Phone Number :</b><span></span></p>
+            <p class="comments"><b>Comments :</b><span></span></p>
+        </div>
+    </div>
+</div>
+
+
+<!-- THIS IS CONTACT FORM -->
+<form action="" id="contact_form">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="" placeholder="First Name">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="" placeholder="Last Name"> 
+    <br>
+    Phone Number:<br>
+    <input type="text" name="phonenumber" value="" placeholder="Phone Number">
+    <br>
+    Comments:<br>
+    <textarea name="comments" cols="30" rows="5" class="html-text-box" placeholder="Comments"></textarea><br>
+    <input type="button" id="myBtn" value="Submit">
+  </fieldset>
+</form>
+
+</body>
+
+
+
+  <script src="js/main.js"></script>
+</html>
